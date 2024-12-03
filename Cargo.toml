@@ -1,0 +1,15 @@
+[package]
+name = "tokio-microservice"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+hyper = { version = "0.14", features = ["full"] }
+tonic = { version = "0.7", features = ["transport"] }
+tower = "0.4"
+prost = "0.10"           # For protocol buffers
+prost-types = "0.10"     # For standard protobuf types
+
+[build-dependencies]
+tonic-build = "0.7"
